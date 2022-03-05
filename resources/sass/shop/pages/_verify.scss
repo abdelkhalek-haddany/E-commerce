@@ -1,0 +1,19 @@
+.verify{
+    text-align: center;
+    .text{
+        color: $themeTextColor1;
+        text-align: center;
+    }
+    input{
+        width: 300px;
+        color: $themeTextColor1;
+        background-color: $mainColor;
+        text-align: center;
+        margin: 15px;
+        border: none;
+        box-shadow: none;
+        outline: none;
+        padding: 10px;
+    }
+
+}

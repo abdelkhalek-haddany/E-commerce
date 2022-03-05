@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,EAAE,IAAI,CAAC;EACP,SAAS,EAAE,GAAG;CACjB",
+    "sources": [
+        "style-ltr.scss"
+    ],
+    "names": [],
+    "file": "style-ltr.css"
+}

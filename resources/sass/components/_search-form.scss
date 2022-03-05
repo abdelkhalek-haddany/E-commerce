@@ -1,0 +1,18 @@
+.search-container{
+    margin: auto;
+    @media (max-width:767px) {
+      margin-left: 15px;
+    }
+  .search {
+    border: 2px solid $themeTextColor1;
+    border-radius: 15px;
+    background-color: $darkColor;
+    max-height: 40px;
+    overflow: hidden;
+    i {
+        font-size: 22px;
+        color: #FFF;
+        padding: 8px;
+    }
+  }
+  }

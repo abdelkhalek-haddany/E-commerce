@@ -1,0 +1,56 @@
+// the mixin of mobile media query
+@mixin maxMobile {
+    @media (max-width:767px) {
+        @content;
+    }
+}
+// the mixin of small screen media query
+@mixin mainSmall {
+    @media (min-width:768px) {
+        @content;
+    }
+}
+// the mixin of medum screen media query
+@mixin mainMedum {
+    @media (min-width:992px) {
+        @content;
+    }
+}
+// the mixin of large screen media query
+@mixin maxMobile {
+    @media (max-width:1200px) {
+        @content;
+    }
+}
+// the overly mixin
+@mixin overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+// auto prefixes mixin
+// add the prefixe to proprety
+
+@mixin prefixer($proprety,$value,$prefixes:()) {
+    @each $prefix in $prefixes{
+        #{'-'+$prefix+'-'+$proprety}: $value;
+    }
+    #{$proprety}:$value;
+}
+
+// animation prefixes
+@mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+    @-moz-keyframes #{$name} {
+        @content;
+    }
+    @keyframes #{$name} {
+        @content;
+    }
+}

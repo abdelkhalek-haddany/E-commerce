@@ -1,0 +1,94 @@
+.search{
+.search-title{
+    color: $themeTextColor1;
+    text-align: center;
+    font-weight: bold;
+	margin: 25px auto;
+    background-color: #FFF;
+    padding: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 3px solid $borderColor;
+    border-bottom: 3px solid #FFF;
+    span{
+        color: $mainColor;
+    }
+}
+.topecs-list {
+    background-color: #FFF;
+    margin-bottom: 20px;
+}
+.info{
+    padding-left: 15px;
+}
+.entry {
+    background-color: #FFF;
+    border: 1px solid $borderColor;
+    border-radius: 0px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    padding:0;
+    }
+    .tags-search{
+        a{
+            padding: 4px 6px;
+            color: #FFF !important;
+            background-color: rgb(2, 6, 15);
+            border-radius: 5px;
+        }
+    }
+    .entry-title {
+        margin: 0 0 5px 10px;
+        padding: 25px 30px 0px !important;
+        a {
+            font-size: 28px;
+            font-weight: bold;
+            color: $mainColor;
+            transition: 0.3s;
+            &:hover {
+                color: rgb(95, 197, 245);
+            }
+        }
+    }
+    .entry-meta {
+        margin-bottom: 0 !important;
+        color: $mainColor;
+        border-top: solid 2px #DDD;
+        padding: 10px 30px;
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            li{
+                padding-left: 0 !important;
+            }
+                time{
+                    font-weight: bold;
+                    color: $themeTextColor1;
+                }
+                i{
+                    color: $themeTextColor1;
+                }
+                    ul{
+                        a{
+                            padding: 5px 10px;
+                            border: 1px solid $borderColor;
+                    }
+                }
+            }
+        }
+        i {
+            font-size: 16px;
+            line-height: 0;
+        }
+        a {
+            font-weight: bold;
+            color: #777;
+            font-size: 14px;
+            display: inline-block;
+            line-height: 1;
+        }
+    }

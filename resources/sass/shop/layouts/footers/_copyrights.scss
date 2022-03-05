@@ -1,0 +1,94 @@
+.copyrights {
+	font-size: 14px;
+	color: #666;
+	padding: 0 20px 7px;
+	position: relative;
+	border-top: 1px solid $themeTextColor1;
+	z-index: 10;
+	.creator {
+		margin-top: 25px;
+		@media (max-width:767px) {
+			margin-top: 10px;
+		}
+	}
+	i.heart {
+		color: red;
+	}
+    .haddany-site{
+		color: $mainColor;
+	}
+
+.social-links {
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	@media (max-width:767px) {
+		float: left;
+		margin-top: 0;
+	}
+	.twitter{
+		i{
+			transition: 0.3s;
+			&:hover {
+			color: #1da1f2;
+		}
+	}
+	}
+	.facebook{
+		i{
+			transition: 0.3s;
+			&:hover {
+			color: #3b5998;
+		}
+	}
+}
+	.linkedin{
+		i{
+			transition: 0.3s;
+			&:hover {
+			color: #0077b5;
+		}
+	}
+	}
+	.instagram{
+		i{
+			transition: 0.3s;
+			&:hover {
+			color: #e1306c;
+		}
+	}
+	}
+	.youtube{
+		i{
+			transition: 0.3s;
+			&:hover {
+			color: #ff0000;
+			}
+		}
+	}
+	.contact{
+		i{
+			transition: 0.3s;
+			&:hover {
+			color: $mainColor;
+			}
+		}
+	}
+	a {
+		font-size: 20px;
+		display: inline-block;
+		background: rgba(255, 255, 255, 0.1);
+		color: $themeTextColor1;
+		line-height: 35px !important;
+		margin-right: 5px;
+		border-radius: 4px;
+		text-align: center;
+		width: 35px;
+		height: 35px;
+		margin-bottom: 8px;
+		i{
+			margin-top: 8px;
+		}
+	}
+}
+}

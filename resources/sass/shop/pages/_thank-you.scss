@@ -1,0 +1,55 @@
+.thank-you{
+    text-align: center;
+    .header{
+        color: $themeTextColor1;
+    }
+    .main-content{
+        i{
+            color: green;
+            font-size: 50px;
+        }
+        color: $themeTextColor1;
+        font-size: 20px;
+    }
+    .social-links {
+		margin-top: 10px;
+        .header{
+            margin-bottom: 10px;
+        }
+		a {
+			font-size: 16px;
+			display: inline-block;
+			background: #8baff1;
+			color: rgb(0, 0, 0);
+			line-height: 1;
+			padding: 10px;
+			margin: 5px;
+			min-width: 130px;
+			border-radius: 5px;
+			text-align: center;
+			transition: 0.3s;
+			&:hover {
+				background: #1244a1;
+				color: #fff;
+				text-decoration: none;
+			}
+
+			&.twitter{
+                background-color: #1da1f2;
+			}
+			&.linkedin{
+                background-color: #0077b5;
+			}
+			&.facebook{
+				background-color: #1877f2;
+			}
+			&.youtube{
+				background-color: #ff0000;
+			}
+			&.instagram{
+				background-color: #e1306c;
+			}
+		}
+		
+	}
+}

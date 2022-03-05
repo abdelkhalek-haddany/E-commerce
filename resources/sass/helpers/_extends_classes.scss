@@ -1,0 +1,30 @@
+
+// share button in single post class
+%share-button{
+	color: $themeTextColor1;
+	padding: 3px 10px;
+	border-radius: 4px;
+	margin-right: 5px;
+	text-align: center;
+	margin-left: 10px;
+	@media (max-width:767px) {
+	    display: block;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+}
+
+%subsectionInSingle{
+	background-color: $darkmodBack;
+	padding: 10px 0;
+	color: $themeTextColor1;
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	overflow: hidden;
+	border-top: 3px solid $mainColor;
+	h4{
+		padding: 0 20px 10px;
+        border-bottom: 2px solid $themeColor1;
+	}
+}

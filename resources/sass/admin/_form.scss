@@ -1,0 +1,54 @@
+.content-wrapper{
+    select{
+        overflow-x: scroll;
+        height: 72px;
+        text-align: center;
+    option{
+        width: 55px;
+        display: inline-block;
+        height: 50px;
+        overflow:hidden;
+        border: 1px #bbb solid;
+        text-align: center;
+        line-height: normal;
+    }
+}
+.choose-colors{
+    text-align: center;
+
+    label{
+        position: relative;
+        border:  1px solid #ddd;
+        width: 65px;
+        height: 30px;
+        border-radius: 5px;
+        text-align: left;
+        padding: 3px;
+        overflow: hidden;
+    }
+    input{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+    }
+
+}
+.main-label{
+    display: block;
+    position: static !important;
+    border: none;
+}
+.tags{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    label{
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin: auto 3px;
+        background-color: #eee;
+        padding: 2px 5px;
+    }
+}
+}

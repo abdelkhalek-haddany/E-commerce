@@ -1,0 +1,39 @@
+    .auth-form{
+        width: 100%;
+        text-align: center !important;
+        text-align: -webkit-center !important;
+        padding-bottom: 40px;
+        label{
+            color: $themeTextColor1;
+        }
+        input , textarea{
+            padding: 10px;
+            color: $themeColor1;
+            font-weight: bold;
+            margin: 10px;
+            max-width: 350px;
+            outline: none;
+            border: 1px solid transparent;
+            box-shadow: none;
+            &:focus{
+                border: 1px solid $mainColor;
+                outline: none;
+                box-shadow: none;
+            }
+        }
+        input[type="submit"]{
+            color: #FFF;
+            background-color: $mainColor;
+        }
+        .remember_me{
+        color: $themeTextColor1;
+        max-width: 365px;
+        text-align: left;
+        }
+        .sign-up{
+            color: $themeTextColor1;
+            // a{
+            //     color: rgb(76, 182, 243);
+            // }
+        }
+    }

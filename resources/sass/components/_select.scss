@@ -1,0 +1,27 @@
+select {
+  border: 2px solid #888 ;
+  border-radius: 3px;
+  color: #555;
+  background-color: #FFF;
+  padding: 3px 30px 3px 10px;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  background-repeat: no-repeat;
+  background-size: 0.8em auto;
+  padding-right: 2em;
+  width: 100%;
+  background-image: url("data:image/svg+xml;charset=utf-8, \
+  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 40'> \
+    <polygon points='0,0 60,0 30,40' style='fill:gray;'/> \
+  </svg>");
+  &:focus{
+    outline: none;
+  }
+  &:hover{
+    outline: none;
+  }
+
+}

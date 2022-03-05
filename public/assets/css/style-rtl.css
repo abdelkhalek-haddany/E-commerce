@@ -1,0 +1,76 @@
+html, body {
+  direction: rtl;
+}
+html .header-upper .detail-item, body .header-upper .detail-item {
+  float: right;
+}
+html .header-upper .item, body .header-upper .item {
+  float: left;
+}
+html .bottom-header .call-service, body .bottom-header .call-service {
+  text-align: right;
+}
+html .bottom-search-box, body .bottom-search-box {
+  text-align: left !important;
+}
+html .subscribe .service, body .subscribe .service {
+  text-align: right;
+}
+html .subscribe .subscribe-box, body .subscribe .subscribe-box {
+  text-align: left;
+}
+html .subscribe .subscribe-input, body .subscribe .subscribe-input {
+  padding-right: 15px !important;
+  padding-left: 90px !important;
+}
+html .subscribe .submit, body .subscribe .submit {
+  left: 2.5px !important;
+  right: auto !important;
+}
+html .features .item .icon, body .features .item .icon {
+  float: right;
+}
+html .features .item .info, body .features .item .info {
+  float: left;
+}
+html .header-upper .item:not(:first-child), body .header-upper .item:not(:first-child) {
+  border-right: 2px solid #BBB;
+}
+html .header-upper .item:not(:last-child), body .header-upper .item:not(:last-child) {
+  border-right: none;
+}
+html .app-bar-search i, body .app-bar-search i {
+  right: -40px;
+  left: auto;
+}
+
+.vm--modal {
+  top: 50% !important;
+  left: 0% !important;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 767px) {
+  .vm--modal {
+    left: 45% !important;
+  }
+}
+@media (min-width: 768px) {
+  .vm--modal {
+    left: 10% !important;
+  }
+}
+@media (min-width: 992px) {
+  .vm--modal {
+    left: 10% !important;
+  }
+}
+@media (min-width: 1200px) {
+  .vm--modal {
+    left: 0% !important;
+  }
+}
+.vm--modal .single-post .main-content .post-category a:link {
+  float: right !important;
+}
+
+/*# sourceMappingURL=style-rtl.css.map */

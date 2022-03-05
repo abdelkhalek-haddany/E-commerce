@@ -1,0 +1,37 @@
+:root{
+    --main-color: rgb(24, 121, 185);
+    --theme-color: #00000f;
+    --text-color: #EEE;
+    --mode-color: #1a202c;
+}
+
+$direction: ltr;
+
+$mainColor: var(--main-color);
+$themeColor1: var(--theme-color);
+$themeTextColor1: var(--text-color);
+$darkmodBack: var(--mode-color);
+
+$borderColor: $mainColor;
+
+
+// $themeColor1: #030307;
+// $themeTextColor1: #EEE;
+// $darkmodBack: #1a202c;
+
+// $themeColor2: #f8f6f6;
+// $themeTextColor2: #1a202c;
+// $darkmodBack2: #ccc;
+
+$darkColor: #1a202c;
+
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;

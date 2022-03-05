@@ -1,0 +1,125 @@
+.flexslider{
+    direction: ltr !important;
+    width: auto; /*proper aspect ratio of images*/
+    max-width: 100%; /*maximum width for all slides*/
+    margin: 0; /*centering images in the container*/
+    overflow: hidden;
+    background: none;
+    border: none !important;
+    background:radial-gradient(100% 190% at left,white 55%,#01b0f0 45%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+  .flex-direction-nav a:before{
+      color: #BBB;
+      font-size: 25px;
+  }
+ .slides{
+   
+     .product-info{
+    margin-top: 70px;
+    padding: 5px 10px 0;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+    .item-rate{
+        padding-bottom: 2px;
+        .star{
+            padding:1px;
+            i{
+                font-size: 12px;
+                color: rgb(255, 230, 0);
+        }
+    }
+    }
+    .item-owner{
+        color: $themeTextColor1;
+        margin-bottom: 6px;
+        cursor: pointer;
+        .owner-name{
+            text-align: left;
+            font-size: 13px;
+            font-weight: 500;
+            padding: 2px;
+        }
+        i{
+            font-size: 13px;
+            padding: 2px;
+        }
+    }
+    .item-title{
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 6px;
+            padding: 2px;
+            color: $mainColor;
+            cursor: pointer;
+
+            @media (max-width: 767px) {
+                font-size: 15px;
+            }
+    }
+    .item-price{
+        color: green;
+        font-size: 25px;
+        font-weight: bold;
+        padding: 2px;
+}
+    .operations{
+        padding: 15px 5px;
+        transition:  all .3s ease-in-out;
+        text-align: center !important;
+        .item{
+            margin: 5px;
+            padding:10px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #DDD;
+            line-height: 30px;
+            text-align: center;
+            float: left;
+            @media (max-width: 767px) {
+                width: 35px;
+                height: 35px;
+                padding: 3px;
+            }
+            &:hover{
+                background-color: $mainColor;
+            }
+            &:hover i{
+                color: #fff;
+            }
+            i{
+                color: #777;
+            }
+        }
+    }
+}
+     li{
+         text-align: center;
+     img{
+        max-height: 400px;
+        width: auto;
+        margin: auto;
+        height: 100%;
+        vertical-align: middle !important;
+        line-height: normal !important;
+        border-radius: 50%;
+     }
+}
+ }
+ .flex-control-nav{
+     border-top: 3px solid $themeTextColor1;
+     border-bottom: 3px solid $themeTextColor1;
+     background-color: $themeColor1;
+     li{
+        text-align: center;
+         img{
+             width: auto;
+             max-height: 100px;
+             margin: auto;
+         }
+     }
+ }
+}

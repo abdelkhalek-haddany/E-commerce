@@ -1,0 +1,89 @@
+html , body{
+    direction: rtl;
+
+    .header-upper{
+        .detail-item{
+            float: right;
+          }
+          .item{
+              float: left;
+          }
+    }
+
+    .bottom-header{
+        .call-service{
+            text-align: right;
+        }
+    }
+
+    .bottom-search-box{
+        text-align: left !important;
+}
+.subscribe{
+    .service{
+      text-align: right;
+    }
+    .subscribe-box{
+        text-align: left;
+    }
+    .subscribe-input{
+        padding-right: 15px !important;
+        padding-left: 90px !important;
+    }
+    .submit {
+        left: 2.5px !important;
+        right: auto !important;
+}
+}
+
+.features{
+    .item{
+
+        .icon{
+            float: right;
+        }
+        .info{
+            float: left;
+        }
+    }
+}
+
+
+.header-upper {
+        .item{
+          &:not(:first-child){
+            border-right: 2px solid #BBB;
+          }
+
+          &:not(:last-child){
+            border-right: none;
+          }
+        }
+    }
+
+    .app-bar-search{
+
+     i {
+        right: -40px;
+        left: auto;
+     }
+    }
+}
+
+.vm--modal{
+    top: 50% !important;
+    left: 0% !important;
+    transform: translate(-50%,-50%);
+    @media (max-width:767px) {
+        left: 45% !important;
+    }
+    @media (min-width:768px) {
+        left: 10% !important;
+    }
+    @media (min-width:992px) {
+        left: 10% !important;
+    }
+    @media (min-width:1200px) {
+        left: 0% !important;
+    }
+}

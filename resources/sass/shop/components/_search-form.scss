@@ -1,0 +1,105 @@
+// $tl: 0.6s; // transition length
+// .search-container{
+//   display: inline;
+//   padding: 0;
+// }
+// .search-box {
+//   transition: width $tl, border-radius $tl, background $tl, box-shadow $tl;
+//   width: 40px;height: 40px;
+//   border-radius: 20px;border: none;
+//   cursor: pointer;
+//   background-color: $themeTextColor1;
+//   & + label {
+//     margin-left: -31px;
+//   .search-icon {    
+//     color: black;  
+//   }
+// }
+//   &:hover {
+//     color: white;
+//     background:linear-gradient($themeColor1 0px, rgb(23, 23, 29));
+//     box-shadow: 0 0 0 3px $themeTextColor1;
+//     & + label .search-icon {    color: $themeTextColor1; }
+//   }
+//   &:focus {
+//     transition: width $tl;
+//     border: none;
+//     outline: none;
+//     box-shadow: none;
+//     padding-left: 15px;
+//     cursor: text;
+//     width: 300px;
+//     background: rgb(235, 235, 235);
+//     color: $mainColor;
+//     font-weight: bold;
+//     padding-right: 50px;
+//     @media (max-width:767px) {
+//       width: 150px;
+//     }
+//     & + label .search-icon {    color: $themeColor1;    }
+//   }
+//   &:not(:focus) {    text-indent:-5000px;    } // for more-graceful falling back (:not browsers likely support indent)
+// }
+
+// #search-submit {
+//   position: relative;left: -5000px;
+// }
+
+// .search-icon {
+//   position: relative;
+//   left: -30px;
+//   color: white;
+//   cursor: pointer;
+// }
+
+
+
+
+.search-container{
+  display: inline;
+  padding: 0;
+  position: relative;
+  $tl: 0.6s; // transition length
+  line-height: 55px;
+
+.search-box {
+  height: 45px;
+  border-radius: 20px;border: none;
+  cursor: pointer;
+  background-color: #FFF;
+  transition: width $tl;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding-left: 15px;
+  cursor: text;
+  width: 330px;
+  color: $mainColor;
+  font-weight: bold;
+  padding-right: 70px;  
+  border: 1px solid #ccc;
+
+  @media (max-width:767px) {
+    width: 150px;
+  }
+}
+
+
+.submit {
+  line-height: 0;
+  position: absolute;
+  top: -5px;
+  right: 2.5px;
+  color: $themeColor1;
+  cursor: pointer;
+  border-radius: 40px;
+  height: 40px;
+  width: 40px;
+  background-color: $themeTextColor1;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  line-height: 40px;
+  font-size: 14px;
+  }
+}

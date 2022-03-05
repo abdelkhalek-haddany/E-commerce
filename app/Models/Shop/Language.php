@@ -1,0 +1,26 @@
+<?php
+
+namespace App\Models\Shop;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Language extends Model
+{
+    protected $table = 'languages';
+
+    protected $guarded = [];
+
+    public function scopeActive($query){
+        return $query -> where('active',1);
+    }
+
+    public function  scopeSelection($query){
+
+        return $query -> select('id','abbr', 'name', 'direction', 'active');
+    }
+
+    public function getActive(){
+      return   $this -> active == '1' ? __('admin/globale.enable')  :  __('admin/globale.desible') ;
+    }
+
+}

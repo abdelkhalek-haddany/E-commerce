@@ -1,0 +1,15 @@
+.app-content{
+    .content-body{
+        .images{
+            max-height: 2560px;
+            display: flex;
+            overflow-x: scroll;
+            img{
+                height: 210px;
+                border-radius: 0 !important;
+                margin: 0 2px;
+            }
+
+        }
+    }
+}

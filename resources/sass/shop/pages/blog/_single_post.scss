@@ -1,0 +1,730 @@
+.single-post {
+  padding: 0;
+
+  .main-content {
+
+    h4{
+      color: $mainColor;
+    }
+
+    img{
+      text-align: center;
+    }
+    .article-header {
+
+     
+      h1 {
+        display: block;
+        text-align: center;
+        padding: 30px 20px 0;
+        font-size: 40px;
+        position: relative;
+        color: $themeTextColor1;
+        font-weight: bold;
+
+
+        &::before {
+          content: "";
+          width: 100px;
+          height: 4px;
+          background-color: $themeColor1;
+          position: absolute;
+          left: 50%;
+          bottom: -14px;
+          margin-left: -50px;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: calc(50% - 25px);
+          height: 4px;
+          width: 50px;
+          background-color: $themeColor1;
+          bottom: -25px;
+        
+        }
+      }
+    }
+
+    .article-info {
+      margin: 50px 0 10px;
+      background-color: $darkmodBack;
+      padding: 15px 20px 0;
+    }
+
+    .article-content {
+      background-color: $darkmodBack;
+      padding: 0;
+      border: none;
+      font-size: 20px;
+      position: relative;
+
+      &::before {
+        content: "";
+        width: 100%;
+        height: 4px;
+        position: absolute;
+        bottom: -20px;
+        left: 0px;
+      }
+
+      h3 {
+        font-size: 22px;
+        font-weight: bold;
+        margin: 15px 0 15px;
+        background-color: $themeColor1;
+        padding: 25px;
+        color: $themeTextColor1;
+      }
+
+      a {
+        font-weight: bold;
+        color: $mainColor;
+        text-decoration: none;
+
+      }
+
+      .text {
+        background-color: $darkmodBack;
+        color: $themeTextColor1;
+        padding: 20px;
+        margin: 15px 0;
+      }
+
+      p {
+        background-color: $darkmodBack;
+        color: $themeTextColor1;
+        padding: 20px;
+        margin: 15px 0;
+
+        &.t {
+          color: $themeTextColor1;
+          background-color: $darkmodBack;
+          text-align: center;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+      }
+
+      .points {
+        &:not(.classic) {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+
+        li {
+          &:before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            background-color: $themeTextColor1;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 10px;
+            color: $themeColor1;
+          }
+
+          padding: 10px 15px;
+          background-color: $themeTextColor1;
+          margin-bottom: 10px;
+
+          p:first-child {
+            color: $mainColor;
+          }
+        }
+      }
+
+      .file-name {
+        background-color: $darkmodBack;
+        padding: 15px;
+        margin: 15px 0 0;
+        text-align: left;
+        font-weight: bold;
+        font-size: 18px;
+        color: $mainColor;
+        border-left: 4px solid $mainColor;
+      }
+
+      .important {
+        padding: 15px;
+        margin-bottom: 15px;
+        font-weight: bold;
+        border-radius: 4px;
+        background-color: rgba(233, 30, 30, 0.5);
+        font-size: 15px;
+        line-height: 2;
+      }
+
+      .useful {
+        padding: 40px 15px 10px;
+        background-color: $darkmodBack;
+        color: $themeTextColor1;
+        margin: 20px 0 10px;
+        position: relative;
+
+        &::before {
+          content: "Useful Links";
+          padding: 5px 10px;
+          background-color: $darkmodBack;
+          margin-right: 10px;
+          color: #edf855;
+          font-weight: bold;
+          position: absolute;
+          top: -10px;
+          left: 0;
+        }
+
+        a {
+          display: block;
+          padding: 5px;
+
+          &::before {
+            font-family: "Font Awesome 5 Free";
+            content: "\f061";
+            display: inline-block;
+            padding-right: 3px;
+            vertical-align: middle;
+            margin-right: 10px;
+            font-weight: bold;
+          }
+        }
+      }
+
+      pre {
+        // background-color: #e8dcee;
+        // color: $mainColor;
+        // font-weight: bold;
+        // padding:50px 15px 15px;
+        position: relative;
+      }
+
+      .lan {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #4154f1;
+        color: $darkmodBack;
+        padding: 2px 15px;
+      }
+    }
+
+    .post-desc {
+      background-color: $darkmodBack;
+      padding: 15px 20px;
+      border-radius: 4px;
+      position: relative;
+      font-size: 17px;
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 10px;
+      line-height: 1.8;
+      color: $themeTextColor1;
+
+      &:before {
+        background: linear-gradient(to right, #2980b9 20%, #27ae60 20%, #27ae60 40%, #d35400 40%, #d35400 60%, #8e44ad 60%, #8e44ad 80%, #c0392b 80%);
+        position: absolute;
+        content: "";
+        height: 4px;
+        right: 0;
+        left: 0;
+        top: -4px;
+      }
+
+      &::after {
+        background: linear-gradient(to right, #2980b9 20%, #27ae60 20%, #27ae60 40%, #d35400 40%, #d35400 60%, #8e44ad 60%, #8e44ad 80%, #c0392b 80%);
+        position: absolute;
+        content: "";
+        height: 4px;
+        right: 0;
+        left: 0;
+        bottom: -4px;
+      }
+    }
+
+    .post-meta {
+      background-color: $darkmodBack;
+      padding: 10px 20px;
+      color: $themeTextColor1;
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      overflow: hidden;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+
+      a {
+        color: $themeTextColor1 !important;
+        text-decoration: none;
+
+        &:hover {
+          color: $mainColor !important;
+        }
+      }
+    }
+
+    .post-tags {
+      @extend %subsectionInSingle;
+      a {
+        color: $darkmodBack;
+        &:link {
+          background-color: $themeTextColor1;
+          color: $darkmodBack;
+          border-radius: 4px;
+          padding: 0 6px;
+          margin: 2px 8px;
+          margin-bottom: 8px;
+        }
+      }
+    }
+
+    .tutoriel-link {
+      padding: 20px;
+      padding-left: auto;
+      background-color: $darkmodBack;
+      margin-top: 2px;
+      margin-bottom: 10px;
+      text-align: center;
+
+      a {
+        text-align: center;
+        background-color: #cc3333;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 7px 15px;
+        max-width: 200px;
+      }
+    }
+
+    .post-pagination {
+      direction: ltr !important;
+      @extend %subsectionInSingle;
+      display: flex;
+      justify-content: space-between;
+      background-color: $darkmodBack;
+      padding: 15px 0;
+      margin: 10px 0;
+
+      i {
+        margin: 0 3px;
+      }
+
+      .next-button {
+        float: right;
+        span{
+          background-color: $themeTextColor1;
+        }
+        @media (max-width:767px) {
+          width: 100%;
+
+          .next {
+            text-align: right;
+          }
+
+          .desibled {
+            text-align: right;
+          }
+        }
+      }
+
+      .prev-button {
+        float: left;
+        span{
+          background-color: $themeTextColor1;
+        }
+        @media (max-width:767px) {
+          width: 100%;
+
+          .desibled {
+            text-align: left;
+          }
+        }
+      }
+
+      a {
+        background-color: $themeTextColor1;
+        color: $themeColor1;
+        
+        @media (max-width:767px) {
+          display: block;
+          width: 100%;
+        }
+
+        &:link {
+          background-color: $themeTextColor1;
+        color: $themeColor1;
+          border-radius: 5px;
+          padding: 4px 10px;
+          margin: 10px 0;
+          float: left;
+        }
+      }
+
+      .desibled {
+        cursor: not-allowed;
+        opacity: .4;
+        background-color: $darkmodBack;
+        color: $themeColor1;
+        border-radius: 5px;
+        margin: 10px 0;
+        padding: 4px 10px;
+        float: left;
+
+        @media (max-width:767px) {
+          margin-top: 10px;
+          width: 100%;
+        }
+      }
+
+      ul {
+        list-style: none;
+        padding-bottom: 18px;
+        padding-left: 0;
+      }
+    }
+
+    .related-posts {
+      @extend %subsectionInSingle;
+    }
+
+    .ads {
+      @extend %subsectionInSingle;
+    }
+
+    .post-share {
+      @extend %subsectionInSingle;
+
+      .icon-facebook {
+        @extend %share-button;
+        background-color: #3b5998;
+      }
+
+      .icon-twitter {
+        @extend %share-button;
+        background-color: #1da1f2;
+      }
+
+      .icon-linkedin {
+        @extend %share-button;
+        background-color: #0077b5;
+      }
+    }
+  }
+
+  .breadcrumb-hold {
+    .breadcrumb {
+      background-color: $darkmodBack;
+      padding: 8px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+
+  .breadcrumbs {
+    background-color: $darkmodBack;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+
+
+    >span+span {
+      &:before {
+        font-family: "Font Awesome Free";
+        content: "\f103";
+        color: $themeTextColor1;
+        display: block;
+        font-size: 20px;
+        margin: 10px;
+      }
+
+      @media (min-width: 768px) {
+        &:before {
+          padding: 0 5px;
+          color: $themeTextColor1;
+          content: "/\00a0";
+          display: inline;
+        }
+      }
+    }
+
+    a {
+      color: $mainColor;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      transition: 0.3s;
+    }
+
+    >span {
+      color: $themeTextColor1;
+
+      &:not(:last-child) {
+
+        color: $mainColor;
+      }
+    }
+  }
+
+  .comments-list {
+    border-top: 3px #AAA dashed;
+    margin-top: 20px;
+
+    .commentlist {
+      padding-left: 0px;
+
+      p {
+        padding-left: 20px;
+        color: rgb(100, 91, 91);
+        font-size: 20px;
+      }
+    }
+
+    .comment {
+      position: relative;
+      list-style: none;
+      padding: 10px;
+      background-color: $darkmodBack;
+      border: 1px solid #DDD;
+      margin-bottom: 15px;
+
+      .children {
+        >.comment {
+          background-color: $darkmodBack;
+          color: $themeTextColor1;
+          margin-top: 10px;
+
+          .comment {
+            background-color: #f1f1f1;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+
+    h3#comments {
+      display: none;
+    }
+
+    .comments-count {
+      padding: 10px;
+      color: #777;
+      font-weight: bold;
+      text-align: center;
+      background-color: #ccc;
+      border-radius: 5px;
+      margin: 20px 0;
+    }
+
+    .comment-author {
+      a {
+        color: #222;
+        font-weight: bold;
+        padding: 5px;
+        font-size: 20px;
+      }
+
+      .says {
+        display: none;
+      }
+
+      img {
+        width: 65px;
+        height: 65px;
+        border: #AAA solid 2px;
+        border-radius: 50%;
+      }
+    }
+
+    .comment-meta {
+      a {
+        color: #555;
+        padding: 5px;
+      }
+
+      .comment-edit-link {
+        font-size: 20px;
+        color: #222;
+        position: relative;
+      }
+    }
+
+    .comment-reply-link {
+      color: $themeColor1;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      font-weight: bold;
+      background-color: $darkmodBack;
+      padding: 5px 15px;
+      border-bottom-left-radius: 10px;
+    }
+
+    .comment-respond {
+      a {
+        color: $mainColor;
+        font-weight: bold;
+        padding: 5px;
+        color: $mainColor;
+        font-size: 20px;
+      }
+
+      input {
+        border: #555 2px solid;
+        padding: 10px;
+        display: block;
+        border-radius: 5px;
+      }
+
+      .comment-form-author {
+        float: left;
+        margin-left: 15px;
+        margin-bottom: 15px;
+
+        span {
+          color: red;
+        }
+      }
+
+      .comment-form-email {
+        float: left;
+        margin-left: 15px;
+        margin-bottom: 15px;
+
+        span {
+          color: red;
+        }
+      }
+
+      .comment-form-url {
+        float: left;
+        margin-left: 15px;
+        margin-bottom: 15px;
+
+        span {
+          color: red;
+        }
+      }
+
+      .comment-respond {
+        label {
+          float: left;
+          width: 80px;
+          margin-right: 15px;
+        }
+      }
+    }
+
+    .comment-form-comment {
+      textarea {
+        background-color: $darkmodBack;
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        border: #777 solid 2px;
+      }
+    }
+
+    .comment-form {
+      .comment-notes {
+        padding: 10px;
+        background-color: $darkmodBack;
+        border-left: 5px solid $mainColor;
+        color: #444;
+        font-size: 18px;
+      }
+
+      .comment-form-cookies-consent {
+        float: left;
+
+        input {
+          padding: 15px;
+          height: 20px;
+          width: 20px;
+          margin-top: auto;
+        }
+
+        label {
+          display: inline-block;
+        }
+      }
+
+      label {
+        display: block;
+        color: #444;
+        font-size: 20px;
+        text-align: center;
+      }
+
+      .form-submit {
+        text-align: center;
+
+        input {
+          display: inline-block;
+          background-color: $mainColor;
+          font-size: 20px;
+          color: $darkmodBack;
+          border: none;
+          height: 40px;
+          width: 400px;
+          padding: 2px;
+          border-radius: 5px;
+        }
+      }
+    }
+
+    .comment-form-cookies-consent {
+      width: 100%;
+      text-align: center;
+
+      input {
+        float: left;
+        padding: 0px;
+      }
+
+      label {
+        float: left;
+        padding: 0px;
+      }
+    }
+
+    .comment-reply-title {
+      padding: 10px;
+      color: #777;
+      font-weight: bold;
+      text-align: center;
+      background-color: #ccc;
+      border-radius: 5px;
+      margin: 20px 0;
+    }
+  }
+
+  .commentlist {
+    ol {
+      li {
+        a {
+          color: #000000 !important;
+        }
+      }
+    }
+
+    .breadcrumbs {
+      >span {
+        &:not(:first-child) {
+          &:before {
+            font-family: "FontAwesome";
+            content: "\f103";
+            color: $themeTextColor1;
+            display: block;
+            font-size: 20px;
+            margin: 10px;
+          }
+        }
+      }
+
+      text-align: center;
+    }
+  }
+}

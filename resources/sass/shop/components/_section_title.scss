@@ -1,0 +1,96 @@
+.section-title {
+	z-index: 3;
+	h2 {
+		font-size: 30px;
+		padding: 0;
+		text-align: center;
+		position: relative;
+		margin: 10px 0 40px;
+		letter-spacing: 2px;
+		color: $themeTextColor1;
+		&::before {
+			content: "";
+			width: 150px;
+			height: 5px;
+			background-image: linear-gradient(to right , $themeColor1,  $themeTextColor1,$themeColor1 );
+			position: absolute;
+			left: 48%;
+			bottom: -15px;
+			margin-left: -50px;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			left: calc(50% - 50px);
+			height: 5.1px;
+			width: 20px;
+			background-image: linear-gradient(to left , transparent , $themeColor1, transparent);
+			bottom: -15px;
+			-webkit-animation: move-right 2s infinite linear;
+			animation: move-right 2s infinite linear;
+		}
+	}
+	p {
+		color: #333;
+		font-size: 20px;
+		padding: 20px 5px 30px 30px;
+		font-weight: bold;
+		margin-top: 20px;
+		text-align: left;
+	}
+}
+
+.page-title{
+	font-weight: bold;
+    h1{
+        text-align: center;
+        padding: 10px;
+        margin: 30px 0;
+        background-color: $mainColor;
+        font-weight: bold;
+        color: #fff;
+        position: relative;
+        line-height: 1.6;
+    
+    &:before{
+        content: "";
+        position: absolute;
+        right: 10px;
+        background-color: $themeColor1;
+        height: 100%;
+        width: 10px;
+        top: 0;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        left: 10px;
+        background-color: $themeColor1;
+        height: 100%;
+        width: 10px;
+        top: 0;
+    }
+}
+    }
+
+	.sub-title{
+        padding: 5px;
+        margin: 15px auto 30px;
+        color: $themeTextColor1;
+        position: relative;
+        font-size: 24px;
+        @media (max-width:767px) {
+            text-align: center;
+        }
+    &:before{
+        content: "";
+			width: 300px;
+			height: 2px;
+			background: linear-gradient( to right, #2980b9 20%, #27ae60 20%, #27ae60 40%, #d35400 40%, #d35400 60%, #8e44ad 60%, #8e44ad 80%, #c0392b 80% );
+			position: absolute;
+			bottom: -10px;
+            @media (max-width:768px) {
+                left: calc(50% - 150px);
+            }
+    }
+    }

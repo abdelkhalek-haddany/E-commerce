@@ -1,0 +1,32 @@
+.orders-statistics{
+    margin: 10px auto 30px;
+    .stats-section{
+        background-color: #FFF;
+        border-width: 2px 2px 5px;
+        border-style: solid;
+        height: 80px;
+        padding: 10px;
+        margin: 10px auto;
+        h2{
+            display: inline;
+        }
+    }
+    .stats-section.s1{
+        border-color: red;
+    }
+    .stats-section.s2{
+        border-color: green;
+    }
+    .stats-section.s3{
+        border-color: blue;
+    }
+    .stats-section.s4{
+        border-color: yellow;
+    }
+    .stats-section.s5{
+        border-color: purple;
+    }
+    .stats-section.s6{
+        border-color: gray;
+    }
+}
